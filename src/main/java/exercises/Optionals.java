@@ -16,7 +16,7 @@ import java.util.Optional;
 public class Optionals {
 
     /**
-     * Please check if optional value is present
+     * Exercise 3a: Please check if optional value is present
      */
     public boolean isPresent(Optional<String> optional) {
         // TODO: implement
@@ -24,7 +24,7 @@ public class Optionals {
     }
 
     /**
-     * Please check if empty optional is empty
+     * Exercise 3b: Please check if empty optional is empty
      */
     public boolean isEmpty(Optional<String> optional) {
         // TODO: implement
@@ -32,7 +32,7 @@ public class Optionals {
     }
 
     /**
-     * Please use a SINGLE method to determine if optional value is present
+     * Exercise 3c: Please use a SINGLE method to determine if optional value is present
      * if so, please display the contents of optional to the PrintStream object.
      */
     public void ifPresent(Optional<String> optional, PrintStream printer) {
@@ -40,7 +40,7 @@ public class Optionals {
     }
 
     /**
-     * Please use a SINGLE method to determine if empty optional value is present
+     * Exercise 3d: Please use a SINGLE method to determine if empty optional value is present
      * if not please return a string with an information that it is not present
      */
     public String orElse(Optional<String> optional) {
@@ -49,7 +49,7 @@ public class Optionals {
     }
 
     /**
-     * Please use a SINGLE method to determine if empty optional value is present
+     * Exercise 3e: Please use a SINGLE method to determine if empty optional value is present
      * if not please call a method that provides empty optional detection info.
      */
     public String orElseGet(Optional<String> optional) {
@@ -58,7 +58,7 @@ public class Optionals {
     }
 
     /**
-     * Please use a SINGLE method to return another (non-empty) optional of string passed to the method in case the first was empty.
+     * Exercise 3f: Please use a SINGLE method to return another (non-empty) optional of string passed to the method in case the first was empty.
      *
      * !two solutions possible
      * !in case the first optional is NOT empty please return it
@@ -70,16 +70,16 @@ public class Optionals {
     }
 
     /**
-     * Please use a SINGLE method to determine if optional is present and handle two cases:
+     * Exercise 3g: Please use a SINGLE method to determine if optional is present and handle two cases:
      * if it is present please display its contents on the console
      * else please display a message that the first optional was empty to the PrintStream object.
      */
-    public void ifPresentOrElse(String emptyInfo, PrintStream printer) {
+    public void ifPresentOrElse(Optional<String> optional, String emptyInfo, PrintStream printer) {
         // TODO: implement
     }
 
     /**
-     * Please use a method to stream the optional value and return a list of its contents converted to upper case.
+     * Exercise 3h: Please use a method to stream the optional value and return a list of its contents converted to upper case.
      */
     public List<String> stream(Optional<String> optionalValue) {
         // TODO: implement
