@@ -11,7 +11,7 @@ import java.util.function.*;
 public class FunctionalInterfaces {
 
     /**
-     * Exercise 1a: Please create a UnaryOperator<Integer> instance that returns its parameter multiplied by 5.
+     * Solution 1a: Please create a UnaryOperator<Integer> instance that returns its parameter multiplied by 5.
      * After that please use it and return the result.
      */
     public Integer multiplyBy5(Integer num) {
@@ -20,7 +20,7 @@ public class FunctionalInterfaces {
     }
 
     /**
-     * Exercise 1b: Please create a BinaryOperator<BigInteger> instance that returns the sum of its parameters.
+     * Solution 1b: Please create a BinaryOperator<BigInteger> instance that returns the sum of its parameters.
      * After that please use it and return the result.
      */
     public BigInteger sum(BigInteger x, BigInteger y) {
@@ -29,7 +29,7 @@ public class FunctionalInterfaces {
     }
 
     /**
-     * Exercise 1c: Please create a Predicate<String> instance that determines whether passed parameter is empty
+     * Solution 1c: Please create a Predicate<String> instance that determines whether passed parameter is empty
      * After that please use it and return the result.
      */
     public boolean empty(String str) {
@@ -38,7 +38,7 @@ public class FunctionalInterfaces {
     }
 
     /**
-     * Exercise 1d: Please create a Function<List<String>, String> instance that will take a list of strings,
+     * Solution 1d: Please create a Function<List<String>, String> instance that will take a list of strings,
      * convert it to array and then convert it to a string.
      * After that please use it and return the result.
      */
@@ -48,7 +48,7 @@ public class FunctionalInterfaces {
     }
 
     /**
-     * Exercise 1e: Please create a Supplier<String> that would call on getSuppliedText() method.
+     * Solution 1e: Please create a Supplier<String> that would call on getSuppliedText() method.
      * After that please use it and return the result.
      */
     public String supplyText() {
@@ -57,7 +57,7 @@ public class FunctionalInterfaces {
     }
 
     /**
-     * Exercise 1f: Please create a Consumer<String> that would display the parameter to the PrintStream object.
+     * Solution 1f: Please create a Consumer<String> that would display the parameter to the PrintStream object.
      */
     public void printText(String text, PrintStream printer) {
         Consumer<String> consolePrinter =  a -> printer.println(a); // printer::println;
