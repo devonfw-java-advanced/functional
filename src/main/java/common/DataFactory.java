@@ -48,6 +48,10 @@ public class DataFactory {
         return Arrays.asList("What", "a", "fun", "workshop", "!");
     }
 
+    public static List<String> getSomeUnorderedWords() {
+        return Arrays.asList("there", "here", "11", "8", "9", "10", "stream", "java", "lambda");
+    }
+
     public static Optional<String> getOptionalValue() {
         String value = "I'm not empty!";
         return Optional.of(value);
