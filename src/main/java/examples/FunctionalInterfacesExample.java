@@ -12,7 +12,6 @@ import java.util.function.BinaryOperator;
 import java.util.function.Predicate;
 
 public class FunctionalInterfacesExample {
-    private String value = "functional interface value";
 
     public static void main(String[] args) {
         example1Sort();
