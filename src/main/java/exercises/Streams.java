@@ -11,94 +11,107 @@ import java.util.stream.Collectors;
 
 import static common.DataFactory.*;
 
+/**
+ * Please complete all of below exercises using Stream API and data from @DataFactory class
+ *
+ * For data sources please use following methods:
+ *
+ * book list - getBooks() method
+ * movie series list - getMovieSeries() method
+ * random words generator - getSomeRandomWords() method
+ *
+ */
 public class Streams {
 
     /**
-     * Please complete all of below exercises using Stream API and data from @DataFactory class
-     *
-     * For data sources please use following methods:
-     *
-     * book list - getBooks() method
-     * movie series list - getMovieSeries() method
-     * random words generator - getSomeRandomWords() method
-     *
+     * Exercise 2a: Please return a list of book titles from provided book list
      */
-    public static void main(String[] args) {
-
-        // map
-        /**
-         * Please return a list of book titles from provided book list
-         */
-        List<String> bookNames = null;
-
-        // flatmap
-        /**
-         * Please return a list of all available movies from provided movie series list
-         */
-        List<Movie> availableMovies = null;
-
-        // filter
-        /**
-         * Please return a list of all books written by J_K_ROWLING from provided book list
-         */
-        List<Book> booksByJKRowling = null;
-
-        // count
-        /**
-         * Please return the amount of books written by T_PRATCHETT from provided book list
-         */
-        long booksByTerryPratchettCount = 0;
-
-        // findFirst - nicer effect with parallel stream
-        /**
-         * Please find first available STAR_WARS movie from provided movie series list
-         */
-        Optional<Movie> firstStarWarsMovieOnTheShelf = null;
-
-        // findAny - nicer effect with parallel stream
-        /**
-         * Please find any book written by A_SAPKOWSKI from provided book list
-         */
-        Optional<Book> anyBookByASapkowski = null;
-
-
-        // toList
-        /**
-         * Please create a list of all movie title from provided movie list
-         */
-        List<String> movieTitlesList = null;
-
-        // toSet
-        /**
-         * Please create a set of all authors from provided book list
-         */
-        Set<Author> bookAuthors = null;
-
-        // toMap
-        /**
-         * Please create a map of books with author as a key from provided book list
-         *
-         * !only one book per author is required
-         * !if new book is found for the same author it should replace the previous one
-         */
-        Map<Author, Book> bookOfAnAuthorMap = null;
-
-        // groupingBy
-        /**
-         * Please create a map of books with author as a key from provided book list
-         */
-        Map<Author, Set<Book>> booksGroupedByAuthor = null;
-
-        // joining
-        /**
-         * Please create a string from provided random words generator, using " " (space) as a delimiter
-         */
-        String totallyRandomSentence = null;
-
-        // forEach - only to display results!
-        /**
-         * Please display any of the results on the console using forEach() method and a Consumer<T> functional interface
-         */
-        // code
+    public List<String> bookNames() {
+        // TODO: implement by map()
+        return null;
     }
+
+    /**
+     * Example 2b: Please return a list of all available movies from provided movie series list.
+     */
+    public List<Movie> availableMovies() {
+        // TODO: implement by flatMap()
+        return null;
+    }
+
+    /**
+     * Example 2c: Please return a list of all books written by J_K_ROWLING from provided book list.
+     */
+    public List<Book> booksByJKRowling() {
+        // TODO: implement by filter()
+        return null;
+    }
+
+    /**
+     * Exercise 2d: Please return the amount of books written by T_PRATCHETT from provided book list.
+     */
+    public long countBooksByTerryPratchett() {
+        // TODO: implement using count()
+        return 0;
+    }
+
+    /**
+     * Exercise 2e: Please find first available STAR_WARS movie from provided movie series list
+     */
+    public Optional<Movie> findFirstStarWarsMovieOnTheShelf() {
+        // TODO: impelement by findFirst()
+        return Optional.empty();
+    }
+
+    /**
+     * Exercise 2f: Please find any book written by A_SAPKOWSKI from provided book list
+     */
+    public Optional<Book> findAnyBookByASapkowski() {
+        // TODO: implement by findAny()
+        return Optional.empty();
+    }
+
+    /**
+     * Exercise 2g: Please create a list of all movie title from provided movie list
+     */
+    public List<String> movieTitlesList() {
+        // TODO: implement using toList()
+        return null;
+    }
+
+    /**
+     * Exercise 2h: Please create a set of all authors from provided book list
+     */
+    public Set<Author> bookAuthors() {
+        // TODO: implement using toSet()
+        return null;
+    }
+
+    /**
+     * Exercise 2i: Please create a map of books with author as a key from provided book list
+     *
+     * !only one book per author is required
+     * !if new book is found for the same author it should replace the previous one
+     */
+    public Map<Author, Book> bookOfAnAuthorMap() {
+        // TODO: implement using toMap()
+        return null;
+    }
+
+    /**
+     * Exercise 2j: Please create a map of books with author as a key from provided book list
+     */
+    public Map<Author, Set<Book>> booksGroupedByAuthor() {
+        // TODO: implement by groupingBy()
+        return null;
+    }
+
+    /**
+     * Exercise 2k: Please create a string from provided random words generator, using " " (space) as a delimiter
+     */
+    public String totallyRandomSentenceJoined() {
+        // TODO: implement by joining()
+        return null;
+    }
+
 }

@@ -30,7 +30,7 @@ public class OptionalTests {
     @DisplayName("Exercise 3b: check if is empty")
     public void empty() {
         // when
-        boolean isEmpty = exercises.isEmpty(DataFactory.getEmptyOptional());
+        boolean isEmpty = exercises.isEmpty(getEmptyOptional());
         // then
         assertTrue(isEmpty, failMsg("3b"));
     }
@@ -60,7 +60,7 @@ public class OptionalTests {
     @DisplayName("Exercise 3e: or else get")
     public void orElseGet() {
         // when
-        String callIfEmptyContent = exercises.orElseGet(DataFactory.getEmptyOptional());
+        String callIfEmptyContent = exercises.orElseGet(getEmptyOptional());
         // then
         assertEquals("Nothing was found here either", callIfEmptyContent, failMsg("3e"));
     }
@@ -83,7 +83,7 @@ public class OptionalTests {
         TestTools.PrintTestStreamer testStreamer = new TestTools.PrintTestStreamer(System.out);
         final String empty = "Empty";
         // when
-        exercises.ifPresentOrElse(DataFactory.getEmptyOptional(), empty, testStreamer);
+        exercises.ifPresentOrElse(getEmptyOptional(), empty, testStreamer);
         // then
         assertEquals(1, testStreamer.getCallCount(), failMsg("3g"));
         assertEquals(empty, testStreamer.getPrintedText(), failMsg("3g"));
