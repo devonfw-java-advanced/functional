@@ -1,5 +1,7 @@
 package common.model;
 
+import java.util.Objects;
+
 public class Movie {
 
     private String title;
@@ -24,5 +26,18 @@ public class Movie {
 
     public void setSeries(MovieSeries series) {
         this.series = series;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Movie movie = (Movie) o;
+        return Objects.equals(title, movie.title) && series == movie.series;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(title, series);
     }
 }
