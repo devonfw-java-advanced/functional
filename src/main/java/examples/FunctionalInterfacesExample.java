@@ -52,7 +52,7 @@ public class FunctionalInterfacesExample {
         DataFactory.getBooks().forEach(book -> {
             if (book.getAuthor() == Author.J_R_R_TOLKIEN) {
                 // numberOfTolkiensBooks++; // compile error: Variable must be effectively final
-                tolkiensBooks.add(book);
+                tolkiensBooks.add(book); // NOT preferred (side effect)
             }
         });
         System.out.println("Number of Tolkien's books: " + tolkiensBooks.size());
@@ -82,9 +82,11 @@ public class FunctionalInterfacesExample {
          * Sort unordered words
          */
         List<String> words = DataFactory.getSomeUnorderedWords();
-        words.sort((w1, w2) -> {
-            return w1.compareTo(w2);
-        });
+        words.sort(String::compareTo);
+//       the same done by lambda (longer version)
+//        words.sort((w1, w2) -> {
+//            return w1.compareTo(w2);
+//        });
         words.forEach(System.out::println);
     }
 }

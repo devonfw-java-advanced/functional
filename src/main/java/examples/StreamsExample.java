@@ -25,6 +25,9 @@ public class StreamsExample {
     }
 
     private static void example4FlatMap() {
+        // before usage of flagMap
+        List<List<String>> exampledNestedStringList = getExampledNestedStringList();
+        System.out.println("List of lists: " + exampledNestedStringList);
         // flatMap
         List<String> flatmappedList = getExampledNestedStringList().stream()
                 .flatMap(Collection::stream)
