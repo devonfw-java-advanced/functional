@@ -108,13 +108,12 @@ public class Streams {
      * Solution 2i: Please create a map of books with author as a key from provided book list
      *
      * !only one book per author is required
-     * !if new book is found for the same author it should replace the previous one
      */
     public Map<Author, Book> bookOfAnAuthorMap() {
         Map<Author, Book> booksByAuthorMap =
                 getBooks().stream()
                         .collect(Collectors.toMap(Book::getAuthor, Function.identity(),
-                                (Book existing, Book replacement) -> existing));
+                                (existing, replacement) -> existing));
         return booksByAuthorMap;
     }
 

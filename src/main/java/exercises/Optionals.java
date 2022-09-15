@@ -89,7 +89,9 @@ public class Optionals {
      * Solution 3h: Please use a method to stream the optional value and return a list of its contents converted to upper case.
      */
     public List<String> stream(Optional<String> optionalValue) {
-        List<String> strings = optionalValue.stream().map(String::toUpperCase).collect(Collectors.toList());
+        List<String> strings = optionalValue.stream()
+                .map(String::toUpperCase)
+                .collect(Collectors.toList());
         return strings;
     }
 

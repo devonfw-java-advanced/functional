@@ -6,12 +6,16 @@ public class OptionalsExample {
     public static void main(String[] args) {
         example1OptionalOfIfPresent();
         example2OptionalOfNullableIfPresentOrElse();
+        example3OptionalOrElseGet();
+    }
 
+    private static void example3OptionalOrElseGet() {
         /**
          * Optional.orElseGet() uses Supplier as an argument.
          */
         Optional<String> optionalNullableText = Optional.ofNullable(null);
         String string = optionalNullableText.orElseGet(() -> OptionalsExample.getEmptyString()); // OptionalsExample::getEmptyString
+        System.out.println("String:" + string);
     }
 
     private static String getEmptyString() {
