@@ -91,7 +91,6 @@ public class Streams {
      * Exercise 2i: Please create a map of books with author as a key from provided book list
      *
      * !only one book per author is required
-     * !if new book is found for the same author it should replace the previous one
      */
     public Map<Author, Book> bookOfAnAuthorMap() {
         // TODO: implement using toMap()
